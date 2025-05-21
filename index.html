@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultora Integral</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/EJ_Logotipo_Balan_sf.png" alt="Logo" />
+            <span>Consultora Integral</span>
+        </div>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Soluciones Financieras, Consultoría y Abogacía</h1>
+            <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
+        </div>
+
+        <!-- Agregar botones para redes sociales -->
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:alexis@gmail.com?subject=Me%20Interesa%20el%20Servicio&body=Me%20comunico%20con%20ustedes%20por%20información%20acerca%20de%20sus%20servicios." target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <!-- Botón Contáctanos -->
+        <div class="hero-btn">
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <h3>Consultoría Financiera</h3>
+                <p>Optimiza tus finanzas personales y empresariales.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <h3>Consultoría Empresarial</h3>
+                <p>Asesoramiento estratégico para potenciar tu negocio.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gavel fa-2x"></i>
+                <h3>Servicios de Abogacía</h3>
+                <p>Defensa legal y asesoría jurídica profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <div class="nosotros-contenido">
+            <img src="img/3.jpg" alt="Nuestro equipo" />
+            <p>Somos una empresa con más de 10 años de experiencia brindando soluciones integrales para individuos y
+                empresas. Nuestro equipo está conformado por abogados, economistas y consultores con una sólida
+                trayectoria.</p>
+        </div>
+
+        <div class="cuadros-mv">
+            <div class="cuadro">
+                <i class="fas fa-bullseye fa-2x icono-mv"></i>
+                <h3>Misión</h3>
+                <p>Brindar asesoría integral que impulse el crecimiento y la estabilidad financiera y legal de nuestros
+                    clientes.</p>
+            </div>
+            <div class="cuadro">
+                <i class="fas fa-lightbulb fa-2x icono-mv"></i>
+                <h3>Visión</h3>
+                <p>Ser líderes en soluciones legales y financieras, reconocidos por nuestra ética, innovación y
+                    compromiso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo-container">
+            <div class="miembro-equipo">
+                <img src="img/persona1.webp" alt="Miembro 1">
+                <h3>Juan Pérez</h3>
+                <p>Abogado Senior</p>
+            </div>
+            <div class="miembro-equipo">
+                <img src="img/persona2.jpeg" alt="Miembro 2">
+                <h3>Carlos Rodríguez</h3>
+                <p>Consultor Financiero</p>
+            </div>
+            <div class="miembro-equipo">
+                <img src="img/persona3.jpg" alt="Miembro 3">
+                <h3>María González</h3>
+                <p>Especialista Empresarial</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre" class="sr-only">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" placeholder="Tu email" required />
+
+            <label for="mensaje" class="sr-only">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje-enviado" class="oculto">&#161;Gracias por contactarnos!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alexis Pantoja. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal-miembro" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <img id="modal-imagen" src="" alt="Foto ampliada">
+            <p id="modal-frase"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
