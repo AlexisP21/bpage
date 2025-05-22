@@ -12,27 +12,26 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/balan_services_corporation.png" alt="Logo" />
-            <span>Balan Services Corporation</span>
-        </div>
+        <a href="#"><img src="img/balan_services_corporation.png" alt="logo" class="logo" height="80px"
+                width="100%"></a>
         <nav>
             <div class="menu-icon" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
             <ul id="nav-links">
-                <li><a href="#servicios">Servicios</a></li>
+                <!--<li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#equipo">Equipo</a></li>!-->
+                <li><a href="./contact/contacto.html"><i class="fas fa-info-circle"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-text">
-            <h1>Soluciones Financieras, Consultoría y Abogacía</h1>
+            <h1>Balan Services Corporation</h1>
             <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
+            <p>Visita nuestras redes sociales para más información.</p>
         </div>
 
         <!-- Agregar botones para redes sociales -->
@@ -41,13 +40,14 @@
             <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
             <a href="https://www.twitter.com" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:alexis@gmail.com?subject=Me%20Interesa%20el%20Servicio&body=Me%20comunico%20con%20ustedes%20por%20información%20acerca%20de%20sus%20servicios." target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:alexis@gmail.com?subject=Me%20Interesa%20el%20Servicio&body=Me%20comunico%20con%20ustedes%20por%20información%20acerca%20de%20sus%20servicios."
+                target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
         </div>
 
-        <!-- Botón Contáctanos -->
+        <!-- Botón Contáctanos 
         <div class="hero-btn">
             <a href="#contacto" class="btn">Contáctanos</a>
-        </div>
+        </div>-->
     </section>
 
 
@@ -55,19 +55,24 @@
         <h2>Nuestros Servicios</h2>
         <div class="cards">
             <div class="card">
-                <img src="img/balan_services_counting.png" alt="Balan Counting">
-                <h3>Balan Services Counting CIA</h3>
-                <p>Optimiza tus procesos de soporte para ofrecer un servicio eficiente y orientado a las necesidades de tus clientes. Planificación y desarrollo a tu medida, ¡haz que tu negocio fluya!</p>
+                <a href="./balanCounting/balanCounting.html" style="text-decoration: none; color: inherit;">
+                    <img src="img/balan_services_counting.png" alt="Balan Counting">
+                    <h3>BALAN SERVICES COUNTING CIA</h3>
+                    <p>Optimiza tus procesos de soporte para ofrecer un servicio eficiente y orientado a las necesidades
+                        de tus clientes. Planificación y desarrollo a tu medida. ¡Haz que tu negocio fluya!</p>
+                </a>
             </div>
             <div class="card">
                 <img src="img/imperconsul.png" alt="Imperconsul">
-                <h3>Imperconsul</h3>
-                <p>Haz que tu dinero trabaje para ti. Con asesoría financiera estratégica, convierte tus metas en realidad y asegura tu bienestar económico. ¡Empieza hoy!</p>
+                <h3>IMPERCONSUL</h3>
+                <p>Haz que tu dinero trabaje para ti. Con asesoría financiera estratégica, convierte tus metas en
+                    realidad y asegura tu bienestar económico. ¡Empieza hoy!</p>
             </div>
             <div class="card">
                 <img src="img/lawyer.png" alt="Legal Services">
-                <h3>Legal Services</h3>
-                <p>Defiende tus derechos con expertos que luchan por ti. Justicia, compromiso y resultados en cada caso. ¡Consulta hoy y toma el control!</p>
+                <h3>LEGAL SERVICES</h3>
+                <p>Defiende tus derechos con expertos que luchan por ti. Justicia, compromiso y resultados en cada caso.
+                    ¡Consulta hoy y toma el control!</p>
             </div>
         </div>
     </section>
@@ -118,7 +123,16 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <!-- Modal -->
+    <div id="modal-miembro" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <img id="modal-imagen" src="" alt="Foto ampliada">
+            <p id="modal-frase"></p>
+        </div>
+    </div>
+
+    <!--<section id="contacto">
         <h2>Contacto</h2>
         <form id="formulario-contacto">
             <label for="nombre" class="sr-only">Nombre</label>
@@ -133,22 +147,55 @@
             <button type="submit">Enviar</button>
         </form>
         <p id="mensaje-enviado" class="oculto">&#161;Gracias por contactarnos!</p>
-    </section>
+    </section>!
 
     <footer>
         <p>&copy; 2025 Alexis Pantoja. Todos los derechos reservados.</p>
+    </footer>-->
+
+    <footer class="footer-mejorado">
+        <div class="footer-contenedor">
+
+            <div class="footer-col empresa">
+                <h3>BALAN SERVICES</h3>
+                <p>Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
+                    crecimiento.</p>
+            </div>
+
+            <div class="footer-col enlaces">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="./balanCounting/balanCounting.html">Balan Services Counting</a></li>
+                    <li><a href="#nosotros">Imperconsul</a></li>
+                    <li><a href="#contacto">Legal Services</a></li>
+                    <li><a href="./contact/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contacto">
+                <h4>Contacto</h4>
+                <p>Email: contacto@balanservices.com</p>
+                <p>Teléfono: +593 99 999 9999</p>
+                <p>Dirección: Quito, Ecuador</p>
+            </div>
+
+            <div class="footer-col redes">
+                <h4>Síguenos</h4>
+                <div class="iconos-redes">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            &copy; 2025 BALAN SERVICES & Alexis Pantoja. Todos los derechos reservados.
+        </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="modal-miembro" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar">&times;</span>
-            <img id="modal-imagen" src="" alt="Foto ampliada">
-            <p id="modal-frase"></p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
     <script src="script.js"></script>
 
 </body>

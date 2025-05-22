@@ -40,6 +40,7 @@ nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 1.8rem;
 }
 
 nav a:hover {
@@ -112,8 +113,7 @@ form {
     gap: 1rem;
 }
 
-input,
-textarea {
+input, textarea {
     padding: 1rem;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -225,6 +225,7 @@ footer {
     position: relative;
 }
 
+
 .hero-text {
     margin-bottom: 2rem;
     /* Añadir margen abajo para separar el texto */
@@ -305,7 +306,6 @@ footer {
     }
 }
 
-
 .logo {
     display: flex;
     align-items: center;
@@ -313,7 +313,7 @@ footer {
 }
 
 .logo img {
-    height: 40px;
+    height: 10px;
     max-width: 100%;
     width: auto;
 }
@@ -321,7 +321,7 @@ footer {
 @media (min-width: 1024px) {
     .logo img {
         height: 50px;
-        /* Aumenta ligeramente el tamaño del logo en pantallas grandes si es necesario */
+        /* Aumenta ligeramente el tamaño del logo en pantallas grandes si es necesario*/ 
     }
 }
 
@@ -644,4 +644,67 @@ footer {
         top: 10px;
         right: 15px;
     }
+}
+
+.footer-mejorado {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-col h3, .footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #f4f4f4;
+}
+
+.footer-col p, .footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover {
+  color: #00bcd4;
+}
+
+.iconos-redes a {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+  color: #00bcd4;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #888;
 }

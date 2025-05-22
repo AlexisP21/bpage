@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(to right, #4979a8, #00264d);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1d1d1d;
+  padding: 15px 20px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.activo {
+  color: #00bcd4;
+}
+
+/* Contenido principal */
+.contenido-contacto {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.info-contacto h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1d1d1d;
+}
+
+.info-contacto p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.datos-contacto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.datos-contacto i {
+  color: #00bcd4;
+}
+
+/* Mapa */
+.mapa {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer-mejorado {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-col h3, .footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #f4f4f4;
+}
+
+.footer-col p, .footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover {
+  color: #00bcd4;
+}
+
+.iconos-redes a {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+  color: #00bcd4;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
