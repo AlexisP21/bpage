@@ -1,58 +1,57 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f0f2f5;
-    color: #333;
-    scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
-    background: linear-gradient(to right, #4979a8, #00264d);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #4979a8, #00264d);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    animation: fadeIn 1s ease-in;
+  font-size: 1.8rem;
+  font-weight: 800;
+  animation: fadeIn 1s ease-in;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.4rem;
 }
 
 nav a:hover {
-    color: #ffcc00;
+  color: #ffcc00;
 }
 
 section {
-    padding: 4rem 2rem;
-    max-width: 1100px;
-    margin: auto;
-    animation: fadeInUp 1s ease-out;
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  animation: fadeInUp 1s ease-out;
 }
 
 /* Hero principal */
@@ -100,7 +99,7 @@ section {
   padding: 20px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   cursor: default;
 }
@@ -158,17 +157,17 @@ section {
 }
 
 button {
-    background: #002244;
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+  background: #002244;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
-    background: #004488;
+  background: #004488;
 }
 
 .footer-mejorado {
@@ -191,13 +190,15 @@ button:hover {
   flex: 1 1 220px;
 }
 
-.footer-col h3, .footer-col h4 {
+.footer-col h3,
+.footer-col h4 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #f4f4f4;
 }
 
-.footer-col p, .footer-col a {
+.footer-col p,
+.footer-col a {
   color: #ccc;
   text-decoration: none;
 }
@@ -233,5 +234,3 @@ button:hover {
   font-size: 0.85rem;
   color: #888;
 }
-
-
