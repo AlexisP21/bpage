@@ -25,14 +25,14 @@ header {
 }
 
 .logo-img {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   height: auto;
 }
 
 @media (max-width: 768px) {
   .logo-img {
-    max-width: 170px;
+    max-width: 260px;
   }
 }
 
