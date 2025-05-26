@@ -24,10 +24,16 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  animation: fadeIn 1s ease-in;
+.logo-img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 170px;
+  }
 }
 
 nav ul {
@@ -72,6 +78,66 @@ section {
 .hero-contabilidad p {
   font-size: 1.2rem;
 }
+
+
+
+
+
+.contenedor.contabilidad-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.info-texto {
+  flex: 1 1 400px;
+}
+
+.info-texto h2 {
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.info-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-texto li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.info-texto i {
+  color: #4CAF50;
+  margin-right: 8px;
+}
+
+.info-imagen {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.info-imagen img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
+
 
 /* Beneficios */
 .beneficios {

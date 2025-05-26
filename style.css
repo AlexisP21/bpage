@@ -24,12 +24,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    animation: fadeIn 1s ease-in;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -306,24 +300,20 @@ footer {
     }
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+
+
+.logo{
+  max-width: 300px; /* antes 180px */
+  width: 100%;
+  height: auto;
 }
 
-.logo img {
-    height: 10px;
-    max-width: 100%;
-    width: auto;
+@media (max-width: 768px) {
+  .logo {
+    max-width: 200px; /* antes 140px */
+  }
 }
 
-@media (min-width: 1024px) {
-    .logo img {
-        height: 50px;
-        /* Aumenta ligeramente el tamaño del logo en pantallas grandes si es necesario*/ 
-    }
-}
 
 .cuadros-mv {
     display: flex;
