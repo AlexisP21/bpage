@@ -175,14 +175,6 @@ footer {
     }
 }
 
-/* Menú hamburguesa */
-.menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .menu-icon {
@@ -300,8 +292,6 @@ footer {
     }
 }
 
-
-
 .logo{
   max-width: 320px; /* antes 180px */
   width: 100%;
@@ -313,7 +303,6 @@ footer {
     max-width: 270px; /* antes 140px */
   }
 }
-
 
 .cuadros-mv {
     display: flex;
@@ -354,6 +343,59 @@ footer {
     color: #003366;
     margin-bottom: 1rem;
 }
+
+
+
+
+
+.quienes-somos {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contenedor-quienes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.qs-texto {
+  flex: 1 1 500px;
+}
+
+.qs-texto h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.qs-texto p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.qs-imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.qs-imagen img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
 
 .nosotros-contenido {
     display: flex;
