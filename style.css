@@ -400,19 +400,6 @@ footer {
     border-radius: 10px;
 }
 
-/*
-.qs-imagen {
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-.qs-imagen img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-*/
-
 
 
 /* Video */
@@ -465,11 +452,11 @@ footer {
 
 /* Botones de redes sociales */
 .contenido-hero a {
-    font-size: 3.5rem;
-    margin-right: 10px;
-    color: #ffffff;
+    font-size: 2.3rem;
+    margin-left: 3px;
+    margin-right: 2px;
+    color: #e6dede;
     transition: color 0.3s ease;
-    gap: 1.5rem;
 }
 
 
