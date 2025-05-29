@@ -34,7 +34,7 @@ nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 nav a:hover {
@@ -360,13 +360,13 @@ footer {
 
 .slides {
     display: flex;
-    width: 230%;
+    width: 170%;
     animation: slide 12s infinite;
 }
 
 .slides img {
     width: 100%;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -456,12 +456,34 @@ footer {
 /* Botones de redes sociales */
 .contenido-hero a {
     font-size: 2.3rem;
-    /*margin: 1.5rem;*/
     margin-left: 7px;
     margin-right: 7px;
     color: #e6dede;
     transition: color 0.3s ease;
+    display: inline-block;
 }
+
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    .contenido-hero a {
+        margin: 0 4px;          /* separación vertical si están apilados */
+        font-size: 2.3rem;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contenido-hero a {
+        margin: 0 10px;         /* separación horizontal más moderada */
+    }
+}
+
+
+
+
+
+
 
 
 .quienes-somos {

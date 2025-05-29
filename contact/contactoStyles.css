@@ -41,7 +41,7 @@ nav a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 nav a:hover {
@@ -70,12 +70,30 @@ section {
 
 
 
+/* Contenido principal */
+.contenido-contacto {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.info-contacto h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1d1d1d;
+}
+
+.info-contacto p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
 
 .info-contacto {
   background-color: #f4f4f4;
   padding: 40px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto 40px;
   text-align: center;
@@ -98,53 +116,46 @@ section {
   align-items: center;
   gap: 15px;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #333;
 }
 
 .contacto-items .item i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #00264d;
 }
 
-
-
-
-
-
-
-
-/* Contenido principal */
-.contenido-contacto {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
+.boton-dossier {
+  text-align: center;
+  margin: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4979a8;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
 }
 
-.info-contacto h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #1d1d1d;
-}
-
-.info-contacto p {
-  margin-bottom: 20px;
+/*.btn-dossier {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4979a8;
+  color: white;
+  text-decoration: none;
   font-size: 1rem;
-  color: #555;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}*/
+
+.boton-dossier:hover {
+  background-color: #00264d;
 }
 
-.datos-contacto p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333;
-}
 
-.datos-contacto i {
-  color: #00bcd4;
-}
+
+
 
 /* Mapa */
 .mapa {

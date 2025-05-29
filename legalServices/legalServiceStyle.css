@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(to right, #4979a8, #00264d);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 260px;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    animation: fadeInUp 1s ease-out;
+}
+
+
+.hero {
+    background: url('../img/Family\ Law\ Attorney\ Montgomery\ Alabama.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.contenido-hero {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.contenedor.abogacia-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    background-color: white;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-texto {
+    flex: 1 1 400px;
+}
+
+.info-texto h2 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.info-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-texto ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.info-texto li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.info-texto i {
+    color: #4CAF50;
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    .info-texto ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.boton-dossier {
+  text-align: center;
+  margin: 30px;
+}
+
+.btn-dossier {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4979a8;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dossier:hover {
+  background-color: #00264d;
+}
+
+
+.abogacia-info .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.footer-mejorado {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 60px 20px 20px;
+    font-size: 0.95rem;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+.footer-col p,
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover {
+    color: #00bcd4;
+}
+
+.iconos-redes a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+    color: #00bcd4;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 160px;
+    }
+
+    .contenedor.abogacia-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
