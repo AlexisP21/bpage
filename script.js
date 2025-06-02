@@ -10,7 +10,7 @@ const mostrarElemento = (entry) => {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(mostrarElemento);
 }, {
-    threshold: 0.2,
+    threshold: 0.1,
 });
 
 secciones.forEach(sec => {

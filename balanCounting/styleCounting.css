@@ -70,13 +70,21 @@ section {
   text-align: center;
 }
 
+.hero-contenedor {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
 .hero-contabilidad h1 {
   font-size: 3rem;
   margin-bottom: 15px;
 }
 
 .hero-contabilidad p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 

@@ -6,6 +6,19 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
+    /*
+    font-family: "Nanum Myeongjo", serif;
+    font-family: "Tinos", serif;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: "Ancizar Serif", serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    */
     background: #f0f2f5;
     color: #333;
     scroll-behavior: smooth;
@@ -24,12 +37,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -41,7 +48,85 @@ nav a:hover {
     color: #ffcc00;
 }
 
-.hero {
+/* Video */
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .contenido-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contenido-hero p {
+        font-size: 1.2rem;
+    }
+
+}
+
+.contenido-hero {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contenido-hero h1 {
+    font-size: 2.5rem;
+    font-family: "Nanum Myeongjo", serif;
+    margin-bottom: 0.5em;
+}
+
+.contenido-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Botones de redes sociales */
+.contenido-hero a {
+    font-size: 2.3rem;
+    margin-left: 7px;
+    margin-right: 7px;
+    color: #e6dede;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    .contenido-hero a {
+        margin: 0 4px;          /* separación vertical si están apilados */
+        font-size: 2.3rem;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contenido-hero a {
+        margin: 0 10px;         /* separación horizontal más moderada */
+    }
+}
+
+/*.hero {
     background: linear-gradient(to right, #004080, #0066cc);
     color: white;
     padding: 5rem 2rem;
@@ -49,7 +134,7 @@ nav a:hover {
     animation: slideDown 1s ease-out;
 }
 
-.hero h1 {
+.contenido-hero h1 {
     font-size: 2.5rem;
 }
 
@@ -70,75 +155,16 @@ nav a:hover {
 
 .hero .btn:hover {
     background: #ffaa00;
-}
+}*/
 
 section {
     padding: 4rem 2rem;
     max-width: 1100px;
     margin: auto;
-    animation: fadeInUp 1s ease-out;
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    flex: 1 1 280px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-input,
-textarea {
-    padding: 1rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #002244;
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #004488;
-}
-
-footer {
-    background: #002244;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
-
-.oculto {
-    display: none;
+section.animado {
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Animaciones */
@@ -176,6 +202,72 @@ footer {
     }
 }
 
+/* #servicios {
+    animation: slideDown 1s ease-out;
+} */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+input, textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #002244;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004488;
+}
+
+footer {
+    background: #002244;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.oculto {
+    display: none;
+}*/
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .menu-icon {
@@ -203,7 +295,7 @@ footer {
     }
 }
 
-.hero {
+/* .hero {
     background: url('img/5.jpg') center/cover no-repeat, linear-gradient(to right, #004080, #0066cc);
     color: white;
     padding: 5rem 2rem;
@@ -215,7 +307,6 @@ footer {
 
 .hero-text {
     margin-bottom: 2rem;
-    /* Añadir margen abajo para separar el texto */
 }
 
 .hero h1 {
@@ -229,7 +320,6 @@ footer {
 
 .hero .btn {
     margin-top: 2rem;
-    /* Separar más del texto */
     background: #ffcc00;
     color: #003366;
     padding: 0.8rem 1.5rem;
@@ -240,16 +330,14 @@ footer {
 
 .hero .btn:hover {
     background: #ffaa00;
-}
+} */
 
 /* Botones de redes sociales */
 .redes-sociales {
-    margin: 2rem 0;
-    /* Espacio entre el texto y los botones de redes sociales */
+    margin: 2rem 0; /* Espacio entre el texto y los botones de redes sociales */
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    /* Espacio entre los íconos */
+    gap: 1.5rem; /* Espacio entre los íconos */
 }
 
 .social-btn {
@@ -402,82 +490,6 @@ footer {
 
 
 
-/* Video */
-.hero-video {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.hero-video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .contenido-hero h1 {
-        font-size: 2rem;
-    }
-
-    .contenido-hero p {
-        font-size: 1.2rem;
-    }
-
-}
-
-.contenido-hero {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.contenido-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5em;
-}
-
-.contenido-hero p {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-/* Botones de redes sociales */
-.contenido-hero a {
-    font-size: 2.3rem;
-    margin-left: 7px;
-    margin-right: 7px;
-    color: #e6dede;
-    transition: color 0.3s ease;
-    display: inline-block;
-}
-
-
-/* Móviles (pantallas pequeñas) */
-@media (max-width: 600px) {
-    .contenido-hero a {
-        margin: 0 4px;          /* separación vertical si están apilados */
-        font-size: 2.3rem;
-    }
-}
-
-/* Pantallas medianas (tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .contenido-hero a {
-        margin: 0 10px;         /* separación horizontal más moderada */
-    }
-}
 
 
 
@@ -713,6 +725,7 @@ footer {
     color: #fff;
     padding: 60px 20px 20px;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .footer-contenedor {
