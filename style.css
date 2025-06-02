@@ -5,16 +5,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Roboto', sans-serif;
     /*
-    font-family: "Nanum Myeongjo", serif;
-    font-family: "Tinos", serif;
-    font-family: "Edu NSW ACT Hand Pre", cursive;
-    font-family: 'Playfair Display', serif;
     font-family: "Ancizar Serif", serif;
+    font-family: "Nanum Myeongjo", serif;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-family: "Tinos", serif;
+    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-family: 'Lato', sans-serif;
     font-family: 'Merriweather', serif;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -46,6 +46,20 @@ nav a {
 
 nav a:hover {
     color: #ffcc00;
+}
+
+.logo {
+    max-width: 320px;
+    /* antes 180px */
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 270px;
+        /* antes 140px */
+    }
 }
 
 /* Video */
@@ -164,7 +178,7 @@ section {
 }
 
 section.animado {
-  animation: fadeInUp 1s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
 }
 
 /* Animaciones */
@@ -174,30 +188,6 @@ section.animado {
     }
 
     to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -332,20 +322,19 @@ footer {
     background: #ffaa00;
 } */
 
-/* Botones de redes sociales */
+/* Botones de redes sociales 
 .redes-sociales {
-    margin: 2rem 0; /* Espacio entre el texto y los botones de redes sociales */
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Espacio entre los íconos */
+    gap: 1.5rem; 
 }
 
 .social-btn {
     font-size: 3rem;
-    /* Aumenta el tamaño de los íconos */
     color: white;
     transition: color 0.3s;
-}
+}*/
 
 .social-btn:hover {
     color: #ffcc00;
@@ -360,42 +349,12 @@ footer {
 
 /* Modificaciones en la hero para dispositivos móviles */
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        font-size: 1rem;
-    }
-
-    .redes-sociales {
-        gap: 1rem;
-    }
-
     .social-btn {
         font-size: 1.5rem;
     }
 }
 
-.logo {
-    max-width: 320px;
-    /* antes 180px */
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    .logo {
-        max-width: 270px;
-        /* antes 140px */
-    }
-}
-
-.cuadros-mv {
+/* .cuadros-mv {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -433,8 +392,51 @@ footer {
 .icono-mv {
     color: #003366;
     margin-bottom: 1rem;
+} */
+
+/* Sección Quienes Somos */
+.quienes-somos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 1px solid #e0e0e0;
 }
 
+.contenedor-quienes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.qs-texto {
+    flex: 1 1 500px;
+}
+
+.qs-texto h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.qs-texto p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* .qs-imagen {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.qs-imagen img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
 
 /* Carrusel */
 .carrusel {
@@ -488,59 +490,7 @@ footer {
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.quienes-somos {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.contenedor-quienes {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-}
-
-.qs-texto {
-    flex: 1 1 500px;
-}
-
-.qs-texto h2 {
-    font-size: 2rem;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-}
-
-.qs-texto p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.qs-imagen {
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-.qs-imagen img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Sección Misión y Visión */
 .mision-vision {
     background-color: #f7f7f7;
     padding: 60px 20px;
@@ -594,16 +544,7 @@ footer {
     line-height: 1.6;
 }
 
-
-
-
-
-
-
-
-
-
-.nosotros-contenido {
+/* .nosotros-contenido {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -672,13 +613,13 @@ footer {
 
 .miembro-equipo img {
     width: 150px;
-    /* Ajusta el tamaño de las imágenes */
+    /* Ajusta el tamaño de las imágenes 
     height: 150px;
-    /* Mantén la proporción */
+    /* Mantén la proporción 
     object-fit: cover;
-    /* Asegura que las imágenes se recorten bien */
+    /* Asegura que las imágenes se recorten bien 
     border-radius: 50%;
-    /* Forma circular */
+    /* Forma circular 
     margin-bottom: 1rem;
 }
 
@@ -699,7 +640,7 @@ footer {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación de entrada para los miembros del equipo */
+/* Animación de entrada para los miembros del equipo 
 @keyframes aparecer {
     to {
         opacity: 1;
@@ -717,7 +658,7 @@ footer {
 
 .miembro-equipo:nth-child(3) {
     animation-delay: 0.6s;
-}
+} */
 
 
 .footer-mejorado {
@@ -741,15 +682,13 @@ footer {
     flex: 1 1 220px;
 }
 
-.footer-col h3,
-.footer-col h4 {
+.footer-col h3, .footer-col h4 {
     font-size: 1.2rem;
     margin-bottom: 15px;
     color: #f4f4f4;
 }
 
-.footer-col p,
-.footer-col a {
+.footer-col p, .footer-col a {
     color: #ccc;
     text-decoration: none;
 }
@@ -763,9 +702,8 @@ footer {
     margin-bottom: 8px;
 }
 
-.footer-col ul li a:hover,
-.footer-col a:hover {
-    color: #00bcd4;
+.footer-col ul li a:hover, .footer-col a:hover {
+    color: #0095a8;
 }
 
 .iconos-redes a {
