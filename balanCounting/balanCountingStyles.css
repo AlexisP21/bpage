@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(to right, #4979a8, #00264d);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 260px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section.animado {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero principal */
+.hero-contabilidad {
+  background-image: url('../static/img/balanCounting/counting_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-contenedor {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.hero-contabilidad h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-contabilidad p {
+  font-size: 1.3rem;
+}
+
+/* Sección Información */
+.contenedor.contabilidad-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.info-texto {
+  flex: 1 1 400px;
+}
+
+.info-texto h2 {
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-texto li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.info-texto i {
+  color: #4CAF50;
+  margin-right: 8px;
+}
+
+.info-imagen {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.info-imagen img {
+  max-width: 95%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sección Beneficios */
+.beneficios {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.beneficios h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.beneficio-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.beneficio-grid .item {
+  flex: 1 1 250px;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+.beneficio-grid .item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.beneficio-grid img {
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+.beneficio-grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.beneficio-grid p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* CTA de contacto 
+.contacto-cta {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.contacto-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contacto-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contacto-cta .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-cta .btn:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background: #002244;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #004488;
+}*/
+
+.footer-mejorado {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 60px 20px 20px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+}
+
+.footer-col h3, .footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+.footer-col p, .footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a:hover, .footer-col a:hover {
+    color: #0095a8;
+}
+
+.iconos-redes a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.iconos-redes a:hover {
+    color: #00bcd4;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+}
