@@ -39,14 +39,14 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 nav a:hover {

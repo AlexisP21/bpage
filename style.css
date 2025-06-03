@@ -92,6 +92,7 @@ nav a:hover {
 
 }
 
+/* Opciones dentro del vídeo */
 .contenido-hero {
     position: absolute;
     z-index: 2;
@@ -124,11 +125,10 @@ nav a:hover {
     display: inline-block;
 }
 
-
-/* Móviles (pantallas pequeñas) */
+/* Pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
     .contenido-hero a {
-        margin: 0 4px;          /* separación vertical si están apilados */
+        margin: 0 4px;
         font-size: 2.3rem;
     }
 }
@@ -136,7 +136,7 @@ nav a:hover {
 /* Pantallas medianas (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .contenido-hero a {
-        margin: 0 10px;         /* separación horizontal más moderada */
+        margin: 0 10px;
     }
 }
 
@@ -178,7 +178,7 @@ section {
 }
 
 section.animado {
-  animation: fadeIn 1s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards; /*Animación de aparecer*/
 }
 
 /* Animaciones */
@@ -196,6 +196,7 @@ section.animado {
     animation: slideDown 1s ease-out;
 } */
 
+/* Sección Nuestros Servicios */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +260,7 @@ footer {
 
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .menu-icon {
         display: block;
     }
@@ -283,7 +284,7 @@ footer {
     nav ul li {
         margin: 1rem 0;
     }
-}
+} */
 
 /* .hero {
     background: url('img/5.jpg') center/cover no-repeat, linear-gradient(to right, #004080, #0066cc);
@@ -337,17 +338,14 @@ footer {
 }*/
 
 .social-btn:hover {
-    color: #ffcc00;
-    /* Color al pasar el mouse */
+    color: #ffcc00; /* Color al pasar el mouse */
 }
-
 
 .social-btn i {
-    pointer-events: none;
-    /* Evitar la interacción con el ícono directamente */
+    pointer-events: none;    /* Evitar la interacción con el ícono directamente */
 }
 
-/* Modificaciones en la hero para dispositivos móviles */
+/* Modificaciones en el hero para dispositivos móviles */
 @media (max-width: 768px) {
     .social-btn {
         font-size: 1.5rem;
