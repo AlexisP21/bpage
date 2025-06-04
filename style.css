@@ -49,8 +49,7 @@ nav a:hover {
 }
 
 .logo {
-    max-width: 320px;
-    /* antes 180px */
+    max-width: 350px;
     width: 100%;
     height: auto;
 }
@@ -79,6 +78,7 @@ nav a:hover {
     min-height: 100%;
     object-fit: cover;
     z-index: 1;
+    filter: brightness(0.8);
 }
 
 @media (max-width: 768px) {
@@ -336,6 +336,9 @@ footer {
     color: white;
     transition: color 0.3s;
 }*/
+
+
+
 
 .social-btn:hover {
     color: #ffcc00; /* Color al pasar el mouse */

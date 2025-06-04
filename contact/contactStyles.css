@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
   background: #f0f2f5;
   color: #333;
   scroll-behavior: smooth;
@@ -56,14 +57,14 @@ section {
 }
 
 .logo-img {
-  max-width: 320px;
+  max-width: 350px;
   width: 100%;
   height: auto;
 }
 
 @media (max-width: 768px) {
   .logo-img {
-    max-width: 260px;
+    max-width: 270px;
   }
 }
 
