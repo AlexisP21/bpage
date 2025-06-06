@@ -16,3 +16,19 @@ const observer = new IntersectionObserver((entries) => {
 secciones.forEach(sec => {
     observer.observe(sec);
 });
+
+// Función que redirige al HTML del idioma seleccionado
+const dropdown = document.querySelector('.language-dropdown');
+const toggleBtn = document.querySelector('.dropdown-toggle');
+
+toggleBtn.addEventListener('click', () => {
+  dropdown.classList.toggle('open');
+});
+
+// Cierra el menú si se hace clic fuera
+document.addEventListener('click', (e) => {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove('open');
+  }
+});
+
