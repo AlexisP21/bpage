@@ -1,166 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balan Services Corp</title>
-    <link rel="icon" type="image/png" href="static/img/tierra_2.png">
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <title>Balan Corporation</title>
+    <link rel="icon" type="image/png" href="static/img/vecteezy_earth-globe-world-continents-light-blue-illustration_68969694.png">
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="static/img/balan_services_corporation.png" alt="logo" class="logo"></a>
-        <nav>
-            <ul>
-                <li>
-                    <div class="language-dropdown">
-                        <button class="dropdown-toggle">
-                            <img src="https://flagcdn.com/w80/ec.png" alt="Español" />
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html"><img src="https://flagcdn.com/w40/us.png" alt="USA" /></a></li>
-                            <li><a href="index-en.html"><img src="https://flagcdn.com/w40/cn.png" alt="China"></a></li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- <li><a href="contact/contact.html"><i class="fas fa-phone"></i></a></li> -->
-            </ul>
+    <header id="main-header" class="header">
+        <a href="#"><img src="" alt="logo" class="logo" id="logo"></a>
 
+        <nav class="menu-sup">
+            <a href="#" class="menu-btn-sup">Inicio</a>
+
+            <!-- Menú con desplegable -->
+            <div class="dropdown">
+                <a class="menu-btn-sup">Servicios ▼</a>
+                <div class="dropdown-content">
+                    <a href="./balanCounting/balanCounting.html">Balan Services Counting</a>
+                    <a href="./imperconsul/index.html">Imperconsul</a>
+                    <a href="./legalService/legalService.html">Legal Services</a>
+                </div>
+            </div>
+
+            <a href="./acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
+            <a href="./contact/contact.html" class="menu-btn-sup">Contacto</a>
         </nav>
+
     </header>
 
     <section class="hero-video" id="inicio">
         <video autoplay muted loop playsinline> <!--Control del vídeo-->
-            <source src="static/videos/inicio_reunion.mp4" type="video/mp4">
+            <source src="static/videos/small-vecteezy_world-map-line-business-connection_1622513_small.mp4"
+                type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
         </video>
         <div class="contenido-hero">
             <h1>Balan Services Corporation</h1>
             <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
-            <p>Visita nuestras redes sociales para más información.</p>
-            <!-- Redes Sociales -->
-            <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:alexis@gmail.com?subject=Me%20Interesa%20el%20Servicio&body=Me%20comunico%20con%20ustedes%20por%20información%20acerca%20de%20sus%20servicios."
-                target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 
-
-    <!-- <section class="hero">
-        <div class="hero-text">
-            <h1>Balan Services Corporation</h1>
-            <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
-            <p>Visita nuestras redes sociales para más información.</p>
-        </div>
-
-         Agregar botones para redes sociales --
-        <div class="redes-sociales">
-            <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank"
-                class="social-btn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:alexis@gmail.com?subject=Me%20Interesa%20el%20Servicio&body=Me%20comunico%20con%20ustedes%20por%20información%20acerca%20de%20sus%20servicios."
-                target="_blank" class="social-btn"><i class="fas fa-envelope"></i></a>
-        </div>
-
-        !-- Botón Contáctanos 
-        <div class="hero-btn">
-            <a href="#contacto" class="btn">Contáctanos</a>
-        </div>--
-    </section> -->
-
-    <section id="servicios">
-        <h2 style="margin-bottom: 20px;">Nuestros Servicios</h2>
-        <div class="cards">
-            <a href="balanCounting/balanCounting.html" style="text-decoration: none; color: inherit;" class="card">
-                <div>
-                    <img src="static/img/balanCounting/balan_services_counting.png" alt="Balan Counting">
-                    <h3>BALAN SERVICES COUNTING CIA</h3>
-                    <p>Optimiza tus procesos de soporte para ofrecer un servicio eficiente y orientado a las necesidades
-                        de tus clientes. Planificación y desarrollo a tu medida. ¡Haz que tu negocio fluya!</p>
+    <main>
+        <section id="quienes-somos" class="quienes-somos">
+            <div class="contenedor-quienes">
+                <div class="qs-texto">
+                    <h2>¿Quiénes Somos?</h2>
+                    <p>BALAN SERVICES COUNTING CIA. inició operaciones en mayo del 2000, ofreciendo servicios contables
+                        a
+                        empresas y personas naturales conforme a las exigencias del Servicio de Rentas Internas (SRI).
+                        Su
+                        crecimiento sostenido impulsó la conformación de sociedades y alianzas internacionales,
+                        consolidándose como BALAN SERVICES CORPORATION.
+                        Actualmente, atendemos a más de 180 clientes, incluyendo empresas nacionales e internacionales
+                        de
+                        alto prestigio como Andes Petroleum, Banco del Pichincha, Diners Club, y Diario La Prensa, entre
+                        muchas otras. Nuestra reputación se basa en la calidad, puntualidad y ética profesional de
+                        nuestro
+                        equipo humano, altamente capacitado y con experiencia nacional e internacional.</p>
                 </div>
-            </a>
-            <div class="card">
-                <img src="static/img/imperconsul.png" alt="Imperconsul">
-                <h3>IMPERCONSUL</h3>
-                <p>Haz que tu dinero trabaje para ti. Con asesoría financiera estratégica, convierte tus metas en
-                    realidad y asegura tu bienestar económico. ¡Empieza hoy!</p>
-            </div>
-            <a href="legalService/legalService.html" style="text-decoration: none; color: inherit;" class="card">
-                <div>
-                    <img src="static/img/legalService/lawyer.png" alt="Legal Services">
-                    <h3>LEGAL SERVICES</h3>
-                    <p>Defiende tus derechos con expertos que luchan por ti. Justicia, compromiso y resultados en cada
-                        caso. ¡Consulta hoy y toma el control!</p>
-                </div>
-            </a>
-        </div>
-    </section>
 
-    <section id="quienes-somos" class="quienes-somos">
-        <div class="contenedor-quienes">
-            <div class="qs-texto">
-                <h2>¿Quiénes Somos?</h2>
-                <p>BALAN SERVICES COUNTING CIA. inició operaciones en mayo del 2000, ofreciendo servicios contables a
-                    empresas y personas naturales conforme a las exigencias del Servicio de Rentas Internas (SRI). Su
-                    crecimiento sostenido impulsó la conformación de sociedades y alianzas internacionales,
-                    consolidándose como BALAN SERVICES CORPORATION.
-                    Actualmente, atendemos a más de 180 clientes, incluyendo empresas nacionales e internacionales de
-                    alto prestigio como Andes Petroleum, Banco del Pichincha, Diners Club, y Diario La Prensa, entre
-                    muchas otras. Nuestra reputación se basa en la calidad, puntualidad y ética profesional de nuestro
-                    equipo humano, altamente capacitado y con experiencia nacional e internacional.</p>
-            </div>
-
-            <div class="carrusel">
-                <div class="slides">
-                    <img src="static/img/legalService/1_Vi2bNu8K6tP6pJzm2JR9Lw.jpeg" alt="Slide 1">
-                    <img src="static/img/b8a061f7-fx-tax02.jpg" alt="Slide 2">
-                    <img src="static/img/balanCounting/que-es-la-contabildad-financiera.jpg" alt="Slide 3">
-                    <img src="static/img/corporative_meeting.png" alt="Slide 4">
-                    <img src="static/img/AdobeStock_133970476.jpeg" alt="Slide 5">
-                    <img src="static/img/iStock-890102080.jpg" alt="Slide 6">
-                </div>
-                <div class="texto-sobrepuesto">
-                    <h1>Balan Services Corporation</h1>
-                    <p>Tu aliado estratégico en servicios contables</p>
+                <div class="carrusel">
+                    <div class="slides">
+                        <img src="static/img/1_Vi2bNu8K6tP6pJzm2JR9Lw.jpeg" alt="Slide 1">
+                        <img src="static/img/b8a061f7-fx-tax02.jpg" alt="Slide 2">
+                        <img src="static/img/que-es-la-contabildad-financiera.jpg" alt="Slide 3">
+                        <img src="static/img/corporative_meeting.png" alt="Slide 4">
+                        <img src="static/img/AdobeStock_133970476.jpeg" alt="Slide 5">
+                        <img src="static/img/iStock-890102080.jpg" alt="Slide 6">
+                    </div>
+                    <div class="texto-sobrepuesto">
+                        <h1>Balan Services Corporation</h1>
+                        <p>Tu aliado estratégico en servicios contables</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="mision-vision" class="mision-vision">
-        <h2>Nuestra Misión y Visión</h2>
-        <div class="contenedor-mv">
-            <div class="mv-card">
-                <i class="fas fa-bullseye"></i>
-                <h3>Misión</h3>
-                <p>Ofrecemos soluciones empresariales ágiles y confiables, respaldadas por un equipo experto, íntegro y
-                    comprometido con generar valor a nuestros clientes mediante un servicio responsable y personalizado.
-                </p>
-            </div>
-            <div class="mv-card">
-                <i class="fas fa-eye"></i>
-                <h3>Visión</h3>
-                <p>Ser la firma contable líder en soluciones integrales, reconocida por anticiparnos a las necesidades
-                    de nuestros clientes y guiarlos hacia una mejora constante en calidad, productividad y crecimiento
-                    sostenible.</p>
-            </div>
-            <div class="mv-card">
-                <i class="fas fa-handshake"></i>
-                <h3>Valores</h3>
-                <p>Nuestro trabajo se basa en la honestidad, puntualidad, respeto por el ser humano, eficiencia y ética
-                    profesional. Estos principios nos guían para ofrecer un servicio íntegro y confiable.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer-mejorado">
         <div class="footer-contenedor">
@@ -174,11 +94,12 @@
             <div class="footer-col enlaces">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="balanCounting/balanCounting.html">Balan Services Counting</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Balan Services Counting</a></li>
                     <li><a href="#nosotros">Imperconsul</a></li>
-                    <li><a href="legalService/legalService.html">Legal Services</a></li>
-                    <li><a href="contact/contact.html">Contacto</a></li>
+                    <li><a href="../legalService/legalService.html">Legal Services</a></li>
+                    <li><a href="./acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
+                    <li><a href="./contact/contact.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -211,6 +132,7 @@
                         class="social-btn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
         </div>
 
         <div class="footer-copy">
@@ -219,7 +141,8 @@
 
     </footer>
 
-    <a href="contact/contact.html" class="boton-flotante" title="Contactanos">
+    <a href="https://wa.me/593990713232?text=%C2%A1Hola%20%F0%9F%91%8B!%20Estoy%20muy%20interesado%20en%20sus%20servicios%20y%20me%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%93%84.%20%C2%BFPodr%C3%ADan%20ayudarme%20por%20favor%20%F0%9F%98%8A"
+        target="_blank" class="boton-flotante" title="Contactanos">
         <i class="fas fa-phone"></i>
     </a>
 
