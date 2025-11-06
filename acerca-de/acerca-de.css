@@ -110,150 +110,57 @@ header.scrolled .menu-btn-sup {
   display: block;
 }
 
-section.animado {
-  animation: fadeIn 1s ease-out forwards;
-}
 
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* Hero principal */
-.hero-contabilidad {
-  background-image: url('../static/img/balanCounting/large-vecteezy_calculator-on-chart-and-graph-spreadsheet-paper-finance_8288289_large.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 20px;
+/* Sección Misión, Visión, Valores */
+.mision-vision {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
   text-align: center;
 }
 
-.hero-contenedor {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2em;
-  border-radius: 10px;
-  text-align: center;
-  text-shadow: 1px 1px 5px black;
-}
-
-.hero-contabilidad h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.hero-contabilidad p {
-  font-size: 1.3rem;
-}
-
-/* Sección Información */
-.contenedor.contabilidad-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  background-color: #f8f9fa;
-  padding: 40px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  align-items: center;
-}
-
-.info-texto {
-  flex: 1 1 400px;
-}
-
-.info-texto h2 {
-  color: #1a1a1a;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.info-texto p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.info-texto ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-texto li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.info-texto i {
-  color: #4CAF50;
-  margin-right: 8px;
-}
-
-.info-imagen {
-  flex: 1 1 300px;
-  text-align: center;
-}
-
-.info-imagen img {
-  max-width: 80%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Sección Beneficios */
-.beneficios {
-  padding: 30px ;
-  background-color: #f9f9f9;
-}
-
-.beneficios h2 {
-  text-align: center;
-  font-size: 2.5rem;
+.mision-vision h2 {
+  font-size: 2rem;
   margin-bottom: 40px;
+  color: #00264d;
 }
 
-.beneficio-grid {
-  display: flex;
+/* Contenedor 3 columnas */
+.contenedor-mv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
 }
 
-.beneficio-grid .item {
-  flex: 1 1 250px;
-  text-align: center;
-  padding: 40px;
+.mv-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  cursor: default;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgb(0, 0, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.beneficio-grid .item:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 5px 15px rgb(255, 217, 0);
-}
-
-.beneficio-grid img {
-  height: 90px;
+.mv-card i {
+  font-size: 3rem;
+  color: #4979a8;
   margin-bottom: 15px;
 }
 
-.beneficio-grid h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+.mv-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #00264d;
 }
 
-.beneficio-grid p {
+.mv-card p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Animación hover */
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* Botón Contacto */
