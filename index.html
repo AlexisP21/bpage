@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Balan Corporation</title>
-    <link rel="icon" type="image/png" href="static/img/vecteezy_earth-globe-world-continents-light-blue-illustration_68969694.png">
+    <link rel="icon" type="image/png"
+        href="static/img/vecteezy_earth-globe-world-continents-light-blue-illustration_68969694.png">
 </head>
 
 <body>
     <header id="main-header" class="header">
         <a href="#"><img src="" alt="logo" class="logo" id="logo"></a>
 
-        <nav class="menu-sup">
-            <a href="#" class="menu-btn-sup">Inicio</a>
+        <nav class="menu-sup" id="menuMobile">
 
             <!-- Menú con desplegable -->
             <div class="dropdown">
                 <a class="menu-btn-sup">Servicios ▼</a>
                 <div class="dropdown-content">
                     <a href="./balanCounting/balanCounting.html">Balan Services Counting</a>
-                    <a href="./imperconsul/index.html">Imperconsul</a>
+                    <a href="https://imperconsul.com" target="_blank">Imperconsul</a>
                     <a href="./legalService/legalService.html">Legal Services</a>
                 </div>
             </div>
@@ -30,6 +31,12 @@
             <a href="./acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
             <a href="./contact/contact.html" class="menu-btn-sup">Contacto</a>
         </nav>
+
+        <!-- Botón hamburguesa (solo visible en móviles) -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
 
     </header>
 
@@ -94,9 +101,8 @@
             <div class="footer-col enlaces">
                 <h4>Navegación</h4>
                 <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#">Balan Services Counting</a></li>
-                    <li><a href="#nosotros">Imperconsul</a></li>
+                    <li><a href="./balanCounting/balanCounting.html">Balan Services Counting</a></li>
+                    <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
                     <li><a href="../legalService/legalService.html">Legal Services</a></li>
                     <li><a href="./acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
                     <li><a href="./contact/contact.html">Contacto</a></li>
@@ -110,7 +116,7 @@
                         <p>Email: contacto@balanservices.com</p>
                     </li>
                     <li>
-                        <p>Teléfono: +593 99 999 9999</p>
+                        <p>Teléfono: +593 99 145 6292</p>
                     </li>
                     <li>
                         <p>Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
