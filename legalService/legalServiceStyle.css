@@ -209,6 +209,87 @@ header.scrolled .hamburger {
     font-size: 1.3rem;
 }
 
+
+
+
+/* ===== SOCIAL BAR ===== */
+.social-bar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.social-bar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 60px 0 35px; /* ⬅️ más separación arriba */
+  flex-wrap: wrap;
+}
+
+/* ICONO */
+.social i {
+  font-size: 18px;
+}
+
+/* COLORES POR RED */
+.social.facebook {
+  background: linear-gradient(135deg, #1877f2, #0f5dc8);
+}
+
+.social.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.social.linkedin {
+  background: #0077b5;
+}
+
+.social.tiktok {
+  background: linear-gradient(45deg, #000000, #25f4ee, #fe2c55);
+}
+
+/* HOVER */
+.social:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .social span {
+    display: none; /* Solo iconos en móvil */
+  }
+
+  .social {
+    padding: 12px;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+
+
+
 /* Sección Servicios Jurídicos */
 .contenedor.abogacia-info {
     display: flex;
