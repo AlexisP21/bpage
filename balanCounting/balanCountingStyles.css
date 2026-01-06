@@ -28,7 +28,7 @@ header.scrolled {
 }
 
 .logo {
-  width: 290px;
+  width: 300px;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;

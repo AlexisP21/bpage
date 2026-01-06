@@ -6,10 +6,10 @@ function actualizarLogo() {
 
   if (scrollPosition > 160) {
     header.classList.add("scrolled");
-    logo.src = "../static/img/balanCounting/balan_services_counting_2.png";
+    logo.src = "../static/img/balanCounting/2-removebg-preview.png";
   } else {
     header.classList.remove("scrolled");
-    logo.src = "../static/img/balanCounting/balan_services_counting_2.png";
+    logo.src = "../static/img/balanCounting/3-removebg-preview.png";
   }
 }
 
