@@ -87,6 +87,9 @@ function setLanguage(lang) {
   // Guardar idioma seleccionado
   localStorage.setItem("lang", lang);
 
+  //Cambia el mensaje de whatsapp
+  setWhatsAppMessage();
+
   // Botón activo
   document.querySelectorAll(".lang-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
@@ -94,9 +97,23 @@ function setLanguage(lang) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "es";
-  setLanguage(savedLang);
+  const savedLang = localStorage.getItem("lang");
+
+  if (savedLang) {
+    // El usuario ya eligió idioma
+    setLanguage(savedLang);
+  } else {
+    // Detectar idioma del navegador
+    const browserLang = getBrowserLanguage();
+    setLanguage(browserLang);
+  }
 });
+
+
+function getBrowserLanguage() {
+  const lang = navigator.language || navigator.userLanguage;
+  return lang.startsWith("en") ? "en" : "es";
+}
 
 
 // --- Menú hamburguesa ---
@@ -185,3 +202,31 @@ form.addEventListener("submit", function (e) {
       btnLoader.style.display = "none";
     });
 });
+
+//Mensaje de Whatsapp dependiendo del idioma
+  function setWhatsAppMessage() {
+    const whatsappBtn = document.getElementById("whatsapp-btn");
+
+    if (!whatsappBtn) return;
+
+    // Idioma actual (usa el mismo criterio que ya tienes)
+    const lang = localStorage.getItem("lang") || navigator.language.slice(0, 2);
+
+    // Mensajes
+    const messages = {
+      es: "¡Hola 👋! Estoy muy interesado en sus servicios y me encantaría recibir más información 📄. ¿Podrían ayudarme por favor 😊?",
+      en: "Hello 👋! I am very interested in your services and I would love to receive more information 📄. Could you please help me? 😊"
+    };
+
+    // Mensaje según idioma (fallback a español)
+    const message = messages[lang] || messages.es;
+
+    // Codificar mensaje
+    const encodedMessage = encodeURIComponent(message);
+
+    // Construir URL final
+    whatsappBtn.href = `https://wa.me/593990713232?text=${encodedMessage}`;
+  }
+
+  // Ejecutar al cargar
+  document.addEventListener("DOMContentLoaded", setWhatsAppMessage);
