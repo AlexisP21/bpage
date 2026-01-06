@@ -20,7 +20,7 @@
 
             <!-- Menú con desplegable -->
             <div class="dropdown">
-                <a class="menu-btn-sup">Servicios ▼</a>
+                <a class="menu-btn-sup" data-i18n="services">Servicios ▼</a>
                 <div class="dropdown-content">
                     <a href="./balanCounting/balanCounting.html">Balan Services Counting</a>
                     <a href="https://imperconsul.com" target="_blank">Imperconsul</a>
@@ -28,8 +28,13 @@
                 </div>
             </div>
 
-            <a href="./acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
-            <a href="./contact/contact.html" class="menu-btn-sup">Contacto</a>
+            <a href="./acerca-de/acerca-de.html" class="menu-btn-sup" data-i18n="about_us">Acerca de</a>
+            <a href="./contact/contact.html" class="menu-btn-sup" data-i18n="contact">Contacto</a>
+
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
         </nav>
 
         <!-- Botón hamburguesa (solo visible en móviles) -->
@@ -48,7 +53,7 @@
         </video>
         <div class="contenido-hero">
             <h1>Balan Services Corporation</h1>
-            <p>Apoyamos tu crecimiento con experiencia legal y financiera.</p>
+            <p data-i18n="hero_text">Apoyamos tu crecimiento con experiencia legal y financiera.</p>
         </div>
     </section>
 
@@ -56,8 +61,8 @@
         <section id="quienes-somos" class="quienes-somos">
             <div class="contenedor-quienes">
                 <div class="qs-texto">
-                    <h2>¿Quiénes Somos?</h2>
-                    <p>BALAN SERVICES COUNTING CIA. inició operaciones en mayo del 2000, ofreciendo servicios contables
+                    <h2 data-i18n="our_company_title">¿Quiénes Somos?</h2>
+                    <p data-i18n="our_company_text">BALAN SERVICES COUNTING CIA. inició operaciones en mayo del 2000, ofreciendo servicios contables
                         a
                         empresas y personas naturales conforme a las exigencias del Servicio de Rentas Internas (SRI).
                         Su
@@ -82,7 +87,7 @@
                     </div>
                     <div class="texto-sobrepuesto">
                         <h1>Balan Services Corporation</h1>
-                        <p>Tu aliado estratégico en servicios contables</p>
+                        <p data-i18n="carrusel_text">Tu aliado estratégico en servicios contables.</p>
                     </div>
                 </div>
             </div>
@@ -94,47 +99,47 @@
 
             <div class="footer-col empresa">
                 <h3>BALAN SERVICES</h3>
-                <p>Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
+                <p data-i18n="footer_company">Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
                     crecimiento.</p>
             </div>
 
             <div class="footer-col enlaces">
-                <h4>Navegación</h4>
+                <h4 data-i18n="footer_links_title">Navegación</h4>
                 <ul>
                     <li><a href="./balanCounting/balanCounting.html">Balan Services Counting</a></li>
                     <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
                     <li><a href="./legalService/legalService.html">Legal Services</a></li>
-                    <li><a href="./acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
-                    <li><a href="./contact/contact.html">Contacto</a></li>
+                    <li><a href="./acerca-de/acerca-de.html" data-i18n="about_us">Acerca De Nosotros</a></li>
+                    <li><a href="./contact/contact.html" data-i18n="contact">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="footer-col contacto">
-                <h4>Contacto</h4>
+                <h4 data-i18n="contact">Contacto</h4>
                 <ul>
                     <li>
-                        <p>Email: contacto@balanservices.com</p>
+                        <p>Email: asistente-adm@balanservices.com</p>
                     </li>
                     <li>
-                        <p>Teléfono: +593 99 145 6292</p>
+                        <p data-i18n="footer_phone_contact">Teléfono: +593 99 145 6292</p>
                     </li>
                     <li>
-                        <p>Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
+                        <p data-i18n="footer_location_contact">Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
                             Ecuador.</p>
                     </li>
                 </ul>
             </div>
 
             <div class="footer-col redes">
-                <h4>Síguenos</h4>
+                <h4 data-i18n="footer_follow">Síguenos</h4>
                 <div class="iconos-redes">
                     <a href="https://www.facebook.com" target="_blank" class="social-btn"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-btn"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com" target="_blank" class="social-btn"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank"
+                    <a href="https://www.instagram.com/balanservicescounting?igsh=YzNhazk3dHp3cTZz&utm_source=qr"
+                        target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@grupobalanservice?_r=1&_t=ZM-92pFutGKECO" target="_blank"
+                        class="social-btn"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/balanservicescounting/?viewAsMember=true" target="_blank"
                         class="social-btn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -147,35 +152,35 @@
 
     </footer>
 
-
-
-
-
-
-    <div id="popup-container" class="popup-container">
+    <!-- <div id="popup-container" class="popup-container">
         <div class="popup">
             <span id="closeBtn">&times;</span>
 
             <div class="popup-content">
 
-                <!-- FORMULARIO -->
-                <form class="formulario">
+                FORMULARIO
+                <form class="formulario" id="contactForm">
                     <h2>Contáctanos</h2>
 
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Correo">
-                    <input type="tel" placeholder="Teléfono">
+                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="text" id="lastname" placeholder="Apellido">
+                    <input type="email" id="email" placeholder="Correo">
+                    <input type="tel" id="phone" placeholder="Teléfono">
 
-                    <textarea placeholder="Comentario"></textarea>
+                    <textarea id="message" placeholder="Comentario"></textarea>
 
-                    <button type="button" class="btn-enviar">Enviar</button>
+                    <div id="form-status" class="form-status"></div>
+
+                    <button type="submit" class="btn-enviar">
+                        <span id="btn-text">Enviar</span>
+                        <span id="btn-loader" class="loader" style="display:none;"></span>
+                    </button>
                 </form>
 
-                <!-- TEXTO + RELOJ -->
+                TEXTO + RELOJ
                 <div class="texto-reloj">
 
-                    <img src="./static/img/balanCounting/contabili.jpg" class="promo-img">
+                    <img src="./static/img/promotion.jpg" class="promo-img">
 
                     <h3>Promoción disponible por:</h3>
                     <div id="countdown" class="countdown"></div>
@@ -183,10 +188,10 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Botón minimizado -->
-    <div id="minimized-btn" class="minimized-btn" style="display:none;">
+    <!-- <div id="minimized-btn" class="minimized-btn" style="display:none;">
         <div class="mini-content">
             <span class="mini-icon">⏰</span>
             <div class="mini-text">
@@ -194,16 +199,19 @@
                 <span id="mini-countdown"></span>
             </div>
         </div>
-    </div>
-
-
-
-
+    </div> -->
 
     <a href="https://wa.me/593990713232?text=%C2%A1Hola%20%F0%9F%91%8B!%20Estoy%20muy%20interesado%20en%20sus%20servicios%20y%20me%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%93%84.%20%C2%BFPodr%C3%ADan%20ayudarme%20por%20favor%20%F0%9F%98%8A"
         target="_blank" class="boton-flotante" title="Contactanos">
         <i class="fas fa-phone"></i>
     </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("iqZYrz8MD4jXss5i0");
+        })();
+    </script>
 
     <script src="script.js"></script>
 
