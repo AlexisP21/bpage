@@ -32,6 +32,14 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// --- Menú hamburguesa ---
+const hamburger = document.getElementById('hamburger');
+const menuMobile = document.getElementById('menuMobile');
+
+hamburger.addEventListener('click', () => {
+  menuMobile.classList.toggle('active');
+});
+
 //Control de idiomas
 const langButtons = document.querySelectorAll(".lang-btn");
 
@@ -55,11 +63,12 @@ const translations = {
     footer_links_title: "Navegación",
     footer_phone_contact: "Teléfono: +593 99 145 6292",
     footer_location_contact: "Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito, Ecuador.",
-    footer_follow: "Síguenos"
+    footer_follow: "Síguenos",
+    footer_copy: "Todos los derechos reservados"
   },
 
   en: {
-    services: "Servicies ▼",
+    services: "Services ▼",
     about_us: "About us",
     contact: "Contact",
     hero_text: "We support your growth with legal and financial expertise.",
@@ -70,7 +79,8 @@ const translations = {
     footer_links_title: "Navegation",
     footer_phone_contact: "Phone: +593 99 145 6292",
     footer_location_contact: "Location: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito, Ecuador.",
-    footer_follow: "Follow Us"
+    footer_follow: "Follow Us",
+    footer_copy: "All rights reserved"
   }
 };
 
@@ -109,20 +119,39 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 function getBrowserLanguage() {
   const lang = navigator.language || navigator.userLanguage;
   return lang.startsWith("en") ? "en" : "es";
 }
 
+//Mensaje de Whatsapp dependiendo del idioma
+  function setWhatsAppMessage() {
+    const whatsappBtn = document.getElementById("whatsapp-btn");
 
-// --- Menú hamburguesa ---
-const hamburger = document.getElementById('hamburger');
-const menuMobile = document.getElementById('menuMobile');
+    if (!whatsappBtn) return;
 
-hamburger.addEventListener('click', () => {
-  menuMobile.classList.toggle('active');
-});
+    // Idioma actual (usa el mismo criterio que ya tienes)
+    const lang = localStorage.getItem("lang") || navigator.language.slice(0, 2);
+
+    // Mensajes
+    const messages = {
+      es: "¡Hola 👋! Estoy muy interesado en sus servicios y me encantaría recibir más información 📄. ¿Podrían ayudarme por favor 😊?",
+      en: "Hello 👋! I am very interested in your services and I would love to receive more information 📄. Could you please help me? 😊"
+    };
+
+    // Mensaje según idioma (fallback a español)
+    const message = messages[lang] || messages.es;
+
+    // Codificar mensaje
+    const encodedMessage = encodeURIComponent(message);
+
+    // Construir URL final
+    whatsappBtn.href = `https://wa.me/593990713232?text=${encodedMessage}`;
+  }
+
+// Ejecutar al cargar
+document.addEventListener("DOMContentLoaded", setWhatsAppMessage);
+
 
 // ----- Popup Minimizar -----
 const popup = document.getElementById("popup-container");
@@ -203,30 +232,3 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-//Mensaje de Whatsapp dependiendo del idioma
-  function setWhatsAppMessage() {
-    const whatsappBtn = document.getElementById("whatsapp-btn");
-
-    if (!whatsappBtn) return;
-
-    // Idioma actual (usa el mismo criterio que ya tienes)
-    const lang = localStorage.getItem("lang") || navigator.language.slice(0, 2);
-
-    // Mensajes
-    const messages = {
-      es: "¡Hola 👋! Estoy muy interesado en sus servicios y me encantaría recibir más información 📄. ¿Podrían ayudarme por favor 😊?",
-      en: "Hello 👋! I am very interested in your services and I would love to receive more information 📄. Could you please help me? 😊"
-    };
-
-    // Mensaje según idioma (fallback a español)
-    const message = messages[lang] || messages.es;
-
-    // Codificar mensaje
-    const encodedMessage = encodeURIComponent(message);
-
-    // Construir URL final
-    whatsappBtn.href = `https://wa.me/593990713232?text=${encodedMessage}`;
-  }
-
-  // Ejecutar al cargar
-  document.addEventListener("DOMContentLoaded", setWhatsAppMessage);

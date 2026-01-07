@@ -112,9 +112,7 @@ header.scrolled .menu-btn-sup {
   display: block;
 }
 
-
-
-
+/*Botón de cambiar idioma*/
 .lang-switch {
   display: flex;
   gap: 6px;
@@ -146,12 +144,6 @@ header.scrolled .lang-btn {
   color: #000;
   border-color: #ffcc00;
 }
-
-
-
-
-
-
 
 /* --- MENÚ HAMBURGUESA PARA MÓVILES --- */
 .hamburger {
