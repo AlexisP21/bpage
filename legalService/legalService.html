@@ -16,19 +16,24 @@
         <a href="../index.html"><img src="" alt="logo" class="logo" id="logo"></a>
 
         <nav class="menu-sup" id="menuMobile">
-            <a href="../index.html" class="menu-btn-sup">Inicio</a>
+            <a href="../index.html" class="menu-btn-sup" data-i18n="home">Inicio</a>
 
             <!-- Menú con desplegable -->
             <div class="dropdown">
-                <a class="menu-btn-sup">Servicios ▼</a>
+                <a class="menu-btn-sup" data-i18n="services">Servicios ▼</a>
                 <div class="dropdown-content">
                     <a href="../balanCounting/balanCounting.html">Balan Services Counting</a>
                     <a href="https://imperconsul.com" target="_blank">Imperconsul</a>
                 </div>
             </div>
 
-            <a href="../acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
-            <a href="../contact/contact.html" class="menu-btn-sup">Contacto</a>
+            <a href="../acerca-de/acerca-de.html" class="menu-btn-sup" data-i18n="about_us">Acerca de</a>
+            <a href="../contact/contact.html" class="menu-btn-sup" data-i18n="contact">Contacto</a>
+
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
         </nav>
 
         <!-- Botón hamburguesa (solo visible en móviles) -->
@@ -41,7 +46,7 @@
     <section class="hero">
         <div class="contenido-hero">
             <h1>Legal Services Lawyers Bureau</h1>
-            <p>Defendemos tus derechos con ética, experiencia y compromiso.</p>
+            <p data-i18n="hero_text">Defendemos tus derechos con ética, experiencia y compromiso.</p>
         </div>
     </section>
 
@@ -73,98 +78,96 @@
         </div>
     </section>
 
-
-
     <section class="contenedor abogacia-info">
         <div class="info-texto">
-            <h2>Servicios Jurídicos</h2>
-            <p>Brindamos asesoría legal en las principales áreas del Derecho: civil, laboral, comercial y más. Nos
+            <h2 data-i18n="title_lawyer_info">Servicios Jurídicos</h2>
+            <p data-i18n="text_lawyer_info">Brindamos asesoría legal en las principales áreas del Derecho: civil, laboral, comercial y más. Nos
                 enfocamos en ofrecer soluciones prácticas y a la medida de nuestros clientes.</p>
             <ul>
-                <li><i class="fas fa-check-circle"></i> Tributario</li>
-                <li><i class="fas fa-check-circle"></i> International Tax Management</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Mercantil Y Societario</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Procesal</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Inmobiliario Y Registral</li>
-                <li><i class="fas fa-check-circle"></i> Arbitraje</li>
-                <li><i class="fas fa-check-circle"></i> Derecho De Familia Y Sucesiones</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Administrativo</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Laboral Y De Seguridad Social</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Penal</li>
-                <li><i class="fas fa-check-circle"></i> Derecho Civil</li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_1"> Tributario </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_2"> International Tax Management </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_3"> Derecho Mercantil Y Societario </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_4"> Derecho Procesal </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_5"> Derecho Inmobiliario Y Registral </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_6"> Arbitraje </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_7"> Derecho De Familia Y Sucesiones </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_8"> Derecho Administrativo </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_9"> Derecho Laboral Y De Seguridad Social </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_10"> Derecho Penal </span></li>
+                <li><i class="fas fa-check-circle"></i> <span data-i18n="services_11"> Derecho Civil </span></li>
             </ul>
         </div>
     </section>
 
     <div class="boton-dossier">
-        <p>Para más información revise el siguiente PDF:</p>
-        <a href="../static/document/Dossier Corporativo Legal.pdf" target="_blank" class="btn-dossier">Dossier Completo</a>
+        <p data-i18n="text_dossier">Para más información revise el siguiente PDF:</p>
+        <a href="../static/document/Dossier Corporativo Legal.pdf" target="_blank" class="btn-dossier"><span data-i18n="dossier_buttom"> Dossier Completo </span></a>
     </div>
 
-    <footer class="footer-mejorado">
-        <div class="footer-contenedor">
+  <footer class="footer-mejorado">
+    <div class="footer-contenedor">
 
-            <div class="footer-col empresa">
-                <h3>BALAN SERVICES</h3>
-                <p>Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
-                    crecimiento.</p>
-            </div>
+      <div class="footer-col empresa">
+        <h3>BALAN SERVICES</h3>
+        <p data-i18n="footer_company">Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos
+          con tu
+          crecimiento.</p>
+      </div>
 
-            <div class="footer-col enlaces">
-                <h4>Navegación</h4>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../balanCounting/balanCounting.html">Balan Services Counting</a></li>
-                    <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
-                    <li><a href="../acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
-                    <li><a href="../contact/contact.html">Contacto</a></li>
-                </ul>
-            </div>
+      <div class="footer-col enlaces">
+        <h4 data-i18n="footer_links_title">Navegación</h4>
+        <ul>
+          <li><a href="../index.html" data-i18n="home">Inicio</a></li>
+          <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
+          <li><a href="../legalService/legalService.html">Legal Services</a></li>
+          <li><a href="../acerca-de/acerca-de.html" data-i18n="about_us">Acerca De Nosotros</a></li>
+          <li><a href="../contact/contact.html" data-i18n="contact">Contacto</a></li>
+        </ul>
+      </div>
 
-            <div class="footer-col contacto">
-                <h4>Contacto</h4>
-                <ul>
-                    <li>
-                        <p>Email: asistente-adm@balanservices.com</p>
-                    </li>
-                    <li>
-                        <p>Teléfono: +593 99 145 6292</p>
-                    </li>
-                    <li>
-                        <p>Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
-                            Ecuador.</p>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-col contacto">
+        <h4 data-i18n="contact">Contacto</h4>
+        <ul>
+          <li>
+            <p>Email: asistente-adm@balanservices.com</p>
+          </li>
+          <li>
+            <p data-i18n="footer_phone_contact">Teléfono: +593 99 145 6292</p>
+          </li>
+          <li>
+            <p data-i18n="footer_location_contact">Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza
+              Toscana​ Piso ​2. Quito,
+              Ecuador.</p>
+          </li>
+        </ul>
+      </div>
 
-            <div class="footer-col redes">
-                <h4>Síguenos</h4>
-                <div class="iconos-redes">
-                    <a href="https://www.facebook.com" target="_blank" class="social-btn"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-btn"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com" target="_blank" class="social-btn"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/alexis-jair-pantoja-rios-bb6b48301" target="_blank"
-                        class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
+      <div class="footer-col redes">
+        <h4 data-i18n="footer_follow">Síguenos</h4>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/balanservicescounting?igsh=YzNhazk3dHp3cTZz&utm_source=qr" target="_blank"
+            class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@grupobalanservice?_r=1&_t=ZM-92pFutGKECO" target="_blank"
+            class="social-btn"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.linkedin.com/company/balanservicescounting/?viewAsMember=true" target="_blank"
+            class="social-btn"><i class="fab fa-linkedin-in"></i></a>
         </div>
+      </div>
 
-        <div class="footer-copy">
-            &copy; 2025 BALAN SERVICES & Alexis Pantoja. Todos los derechos reservados.
-        </div>
+    </div>
 
-    </footer>
+    <div class="footer-copy">
+      &copy; 2025 BALAN SERVICES & Alexis Pantoja. Todos los derechos reservados.
+    </div>
 
-    <a href="https://wa.me/593990713232?text=%C2%A1Hola%20%F0%9F%91%8B!%20Estoy%20muy%20interesado%20en%20sus%20servicios%20y%20me%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%93%84.%20%C2%BFPodr%C3%ADan%20ayudarme%20por%20favor%20%F0%9F%98%8A"
-        target="_blank" class="boton-flotante" title="Contactanos">
+  </footer>
+
+    <a id="whatsapp-btn" href="https://wa.me/593990713232" target="_blank" class="boton-flotante" title="Contactanos">
         <i class="fas fa-phone"></i>
     </a>
 
-    <script src="./legalService.js"></script>
+    <script src="legalService.js"></script>
 
 </body>
 
