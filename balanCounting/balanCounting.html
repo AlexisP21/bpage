@@ -19,19 +19,24 @@
 
 
     <nav class="menu-sup" id="menuMobile">
-      <a href="../index.html" class="menu-btn-sup">Inicio</a>
+      <a href="../index.html" class="menu-btn-sup" data-i18n="home">Inicio</a>
 
       <!-- Menú con desplegable -->
       <div class="dropdown">
-        <a class="menu-btn-sup">Servicios ▼</a>
+        <a class="menu-btn-sup" data-i18n="services">Servicios ▼</a>
         <div class="dropdown-content">
           <a href="https://imperconsul.com" target="_blank">Imperconsul</a>
           <a href="../legalService/legalService.html">Legal Services</a>
         </div>
       </div>
 
-      <a href="../acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
-      <a href="../contact/contact.html" class="menu-btn-sup">Contacto</a>
+      <a href="../acerca-de/acerca-de.html" class="menu-btn-sup" data-i18n="about_us">Acerca de</a>
+      <a href="../contact/contact.html" class="menu-btn-sup" data-i18n="contact">Contacto</a>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </nav>
 
     <!-- Botón hamburguesa (solo visible en móviles) -->
@@ -44,30 +49,27 @@
   <section class="hero-contabilidad">
     <div class="hero-contenedor">
       <h1>Balan Services Counting CIA</h1>
-      <p>Consultores Financieros, Contabilidad Outsourcing & TAX</p>
+      <p data-i18n="hero_text">Consultores Financieros, Contabilidad Outsourcing & TAX</p>
     </div>
   </section>
 
   <section class="contenedor contabilidad-info">
     <div class="info-texto">
-      <h2>¿Por qué elegir nuestros servicios contables?</h2>
-      <p>
+      <h2 data-i18n="title_info_contability">¿Por qué elegir nuestros servicios contables?</h2>
+      <p data-i18n="middle_text_contability">
         En BALAN SERVICES COUNTING, ofrecemos soluciones contables personalizadas como:
       </p>
       <ul>
-        <li><i class="fas fa-check-circle"></i> Contabilidad – Outsourcing en nuestras oficinas o fuera de las mismas
-        </li>
-        <li><i class="fas fa-check-circle"></i> Actualización Contabilidades atrasadas</li>
-        <li><i class="fas fa-check-circle"></i> Declaración de Impuestos I.V.A., ICE; Impuesto a la Renta</li>
-        <li><i class="fas fa-check-circle"></i> Elaboración de Anexos ( ATS, REOC, RDEP, Gastos Personales, etc.)</li>
-        <li><i class="fas fa-check-circle"></i> Asesoría en declaraciones patrimoniales</li>
-        <li><i class="fas fa-check-circle"></i> Consultoría e Implementación de Normas Internacionales de Información
-          Financiera (NIIF`s)</li>
-        <li><i class="fas fa-check-circle"></i> Asesoría de Negocios con utilización de herramientas Financieras y
-          Tributarias</li>
-        <li><i class="fas fa-check-circle"></i> Estructuras Financieras Societarias</li>
-        <li><i class="fas fa-check-circle"></i> Peritajes Financieros</li>
-        <li><i class="fas fa-check-circle"></i> Flujos de Efectivo</li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_1"> Contabilidad – Outsourcing en nuestras oficinas o fuera de las mismas </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_2"> Actualización Contabilidades atrasadas </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_3"> Declaración de Impuestos I.V.A., ICE; Impuesto a la Renta </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_4"> Elaboración de Anexos ( ATS, REOC, RDEP, Gastos Personales, etc.) </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_5"> Asesoría en declaraciones patrimoniales </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_6"> Consultoría e Implementación de Normas Internacionales de Información Financiera (NIIF`s) </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_7"> Asesoría de Negocios con utilización de herramientas Financieras y Tributarias </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_8"> Estructuras Financieras Societarias </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_9"> Peritajes Financieros </span></li>
+        <li><i class="fas fa-check-circle"></i> <span data-i18n="info_option_10"> Flujos de Efectivo </span></li>
       </ul>
     </div>
     <div class="info-imagen">
@@ -76,37 +78,37 @@
   </section>
 
   <section class="contenedor beneficios">
-    <h2>Páginas en las que trabajamos como contribuyentes</h2>
+    <h2 data-i18n="title_benefits">Páginas en las que trabajamos como contribuyentes</h2>
     <div class="beneficio-grid">
       <div class="item">
         <img src="../static/img/balanCounting/sri.jpg" alt="Servicio de Rentas Internas">
-        <h3>Servicio de Rentas Internas</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_1">Servicio de Rentas Internas</h3>
+        <p data-i18n="benefits_text_1">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
       <div class="item">
         <img src="../static/img/balanCounting/logo_iess.gif" alt="IESS">
-        <h3>Instituto Ecuatoriano de Seguridad Social</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_2">Instituto Ecuatoriano de Seguridad Social</h3>
+        <p data-i18n="benefits_text_2">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
       <div class="item">
         <img src="../static/img/balanCounting/ministerio_r_l.jpg" alt="Ministerio de Relaciones Laborales">
-        <h3>Ministerio de Relaciones Laborales</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_3">Ministerio de Relaciones Laborales</h3>
+        <p data-i18n="benefits_text_3">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
       <div class="item">
         <img src="../static/img/balanCounting/logoQDM-removebg-preview.png" alt="Municipio de Quito">
-        <h3>Municipio de Quito</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_4">Municipio de Quito</h3>
+        <p data-i18n="benefits_text_4">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
       <div class="item">
         <img src="../static/img/balanCounting/super.jpg" alt="Superintendencia de Companias">
-        <h3>Superintendencia de Compañias</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_5">Superintendencia de Compañias</h3>
+        <p data-i18n="benefits_text_5">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
       <div class="item">
         <img src="../static/img/balanCounting/bancos.jpg" alt="Superintendencia de Bancos">
-        <h3>Superintendencia de Bancos</h3>
-        <p>Llevamos tus cuentas al día con exactitud y claridad.</p>
+        <h3 data-i18n="benefits_title_6">Superintendencia de Bancos</h3>
+        <p data-i18n="benefits_text_6">Llevamos tus cuentas al día con exactitud y claridad.</p>
       </div>
     </div>
   </section>
@@ -116,39 +118,41 @@
 
       <div class="footer-col empresa">
         <h3>BALAN SERVICES</h3>
-        <p>Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
+        <p data-i18n="footer_company">Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos
+          con tu
           crecimiento.</p>
       </div>
 
       <div class="footer-col enlaces">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer_links_title">Navegación</h4>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html" data-i18n="home">Inicio</a></li>
           <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
           <li><a href="../legalService/legalService.html">Legal Services</a></li>
-          <li><a href="../acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
-          <li><a href="../contact/contact.html">Contacto</a></li>
+          <li><a href="../acerca-de/acerca-de.html" data-i18n="about_us">Acerca De Nosotros</a></li>
+          <li><a href="../contact/contact.html" data-i18n="contact">Contacto</a></li>
         </ul>
       </div>
 
       <div class="footer-col contacto">
-        <h4>Contacto</h4>
+        <h4 data-i18n="contact">Contacto</h4>
         <ul>
           <li>
             <p>Email: asistente-adm@balanservices.com</p>
           </li>
           <li>
-            <p>Teléfono: +593 99 145 6292</p>
+            <p data-i18n="footer_phone_contact">Teléfono: +593 99 145 6292</p>
           </li>
           <li>
-            <p>Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
+            <p data-i18n="footer_location_contact">Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza
+              Toscana​ Piso ​2. Quito,
               Ecuador.</p>
           </li>
         </ul>
       </div>
 
       <div class="footer-col redes">
-        <h4>Síguenos</h4>
+        <h4 data-i18n="footer_follow">Síguenos</h4>
         <div class="iconos-redes">
           <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/balanservicescounting?igsh=YzNhazk3dHp3cTZz&utm_source=qr" target="_blank"
@@ -168,10 +172,9 @@
 
   </footer>
 
-  <a href="https://wa.me/593990713232?text=%C2%A1Hola%20%F0%9F%91%8B!%20Estoy%20muy%20interesado%20en%20sus%20servicios%20y%20me%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%93%84.%20%C2%BFPodr%C3%ADan%20ayudarme%20por%20favor%20%F0%9F%98%8A"
-    target="_blank" class="boton-flotante" title="Contactanos">
-    <i class="fas fa-phone"></i>
-  </a>
+    <a id="whatsapp-btn" href="https://wa.me/593990713232" target="_blank" class="boton-flotante" title="Contactanos">
+        <i class="fas fa-phone"></i>
+    </a>
 
   <script src="balanCounting.js"></script>
 

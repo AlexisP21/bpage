@@ -111,6 +111,38 @@ header.scrolled .menu-btn-sup {
   display: block;
 }
 
+/*Botón de cambiar idioma*/
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  margin-left: 20px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+header.scrolled .lang-btn {
+  border-color: #000;
+  color: #000;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+  background: #ffcc00;
+  color: #000;
+  border-color: #ffcc00;
+}
 
 /* --- MENÚ HAMBURGUESA PARA MÓVILES --- */
 .hamburger {
