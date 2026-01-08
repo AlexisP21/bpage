@@ -28,8 +28,8 @@ window.addEventListener('scroll', () => {
     const areaTop = area.getBoundingClientRect().top;
     if (areaTop < triggerBottom) {
       area.classList.add('visible');
-    }
-  });
+    }
+  });
 });
 
 // --- Menú hamburguesa ---
@@ -37,7 +37,7 @@ const hamburger = document.getElementById('hamburger');
 const menuMobile = document.getElementById('menuMobile');
 
 hamburger.addEventListener('click', () => {
-    menuMobile.classList.toggle('active');
+  menuMobile.classList.toggle('active');
 });
 
 //Control de idiomas
@@ -124,7 +124,8 @@ function setLanguage(lang) {
   localStorage.setItem("lang", lang);
 
   //Cambia el mensaje de whatsapp
-  setWhatsAppMessage();
+  setWhatsAppMessage(lang);
+  setDossierLink(lang);
 
   // Botón activo
   document.querySelectorAll(".lang-btn").forEach(btn => {
@@ -151,30 +152,40 @@ function getBrowserLanguage() {
 }
 
 //Mensaje de Whatsapp dependiendo del idioma
-  function setWhatsAppMessage() {
-    const whatsappBtn = document.getElementById("whatsapp-btn");
+function setWhatsAppMessage(lang) {
+  const whatsappBtn = document.getElementById("whatsapp-btn");
 
-    if (!whatsappBtn) return;
+  if (!whatsappBtn) return;
 
-    // Idioma actual (usa el mismo criterio que ya tienes)
-    const lang = localStorage.getItem("lang") || navigator.language.slice(0, 2);
+// Mensajes
+  const messages = {
+    es: "¡Hola 👋! Estoy muy interesado en sus servicios y me encantaría recibir más información 📄. ¿Podrían ayudarme por favor 😊?",
+    en: "Hello 👋! I am very interested in your services and I would love to receive more information 📄. Could you please help me? 😊"
+  };
 
-    // Mensajes
-    const messages = {
-      es: "¡Hola 👋! Estoy muy interesado en sus servicios y me encantaría recibir más información 📄. ¿Podrían ayudarme por favor 😊?",
-      en: "Hello 👋! I am very interested in your services and I would love to receive more information 📄. Could you please help me? 😊"
-    };
+  // Mensaje según idioma (fallback a español)
+  const message = messages[lang] || messages.es;
 
-    // Mensaje según idioma (fallback a español)
-    const message = messages[lang] || messages.es;
+  // Codificar mensaje
+  const encodedMessage = encodeURIComponent(message);
 
-    // Codificar mensaje
-    const encodedMessage = encodeURIComponent(message);
+  // Construir URL final
+  whatsappBtn.href = `https://wa.me/593990713232?text=${encodedMessage}`;
+}
 
-    // Construir URL final
-    whatsappBtn.href = `https://wa.me/593990713232?text=${encodedMessage}`;
-  }
+//Dossier dependiendo del idioma
+function setDossierLink(lang) {
+  const dossierBtn = document.getElementById("dossierBtn");
+  if (!dossierBtn) return;
+
+  const dossiers = {
+    es: "../static/document/Dossier Corporativo Legal.pdf",
+    en: "../static/document/Dossier Corporativo Legal Inglés.pdf"
+  };
+
+  dossierBtn.href = dossiers[lang] || dossiers.es;
+}
 
 // Ejecutar al cargar
-document.addEventListener("DOMContentLoaded", setWhatsAppMessage);
+
 
