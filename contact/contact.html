@@ -18,11 +18,11 @@
     <a href="../index.html"><img src="" alt="logo" class="logo" id="logo"></a>
 
     <nav class="menu-sup" id="menuMobile">
-      <a href="../index.html" class="menu-btn-sup">Inicio</a>
+      <a href="../index.html" class="menu-btn-sup" data-i18n="home">Inicio</a>
 
-      <!-- Menú con desplegable -->
+      <!-- Menú desplegable -->
       <div class="dropdown">
-        <a class="menu-btn-sup">Servicios ▼</a>
+        <a class="menu-btn-sup" data-i18n="services">Servicios ▼</a>
         <div class="dropdown-content">
           <a href="../balanCounting/balanCounting.html">Balan Services Counting</a>
           <a href="https://imperconsul.com" target="_blank">Imperconsul</a>
@@ -30,7 +30,12 @@
         </div>
       </div>
 
-      <a href="../acerca-de/acerca-de.html" class="menu-btn-sup">Acerca de</a>
+      <a href="../acerca-de/acerca-de.html" class="menu-btn-sup" data-i18n="about_us">Acerca de</a>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </nav>
 
 
@@ -46,7 +51,7 @@
 
     <!-- Información de contacto -->
     <section class="info-contacto">
-      <h2>Información de Contacto</h2>
+      <h2 data-i18n="title">Información de Contacto</h2>
       <div class="contacto-items">
         <div class="item">
           <i class="fas fa-map-marker-alt"></i>
@@ -54,7 +59,7 @@
         </div>
         <div class="item">
           <i class="fas fa-envelope"></i>
-          <p>asistente-adm@balanservices.com</p>
+          <p>asistente-adm@balanservices.com / asistentelegal1@legalserviceslawyersbureau.com</p>
         </div>
         <div class="item">
           <i class="fas fa-phone"></i>
@@ -66,25 +71,35 @@
     <!-- Formulario -->
     <section class="form-mapa">
       <div class="formulario">
-        <h3 class="title">Envíanos un mensaje</h3>
-        <form onsubmit="sendEmail(event)">
+        <h3 class="title" data-i18n="title_form">Envíanos un mensaje</h3>
+        <form class="formulario" id="contactForm">
           <div class="form-group">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="Nombre" required>
           </div>
           <div class="form-group">
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="Apellido" required>
           </div>
           <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" placeholder="Correo" required>
           </div>
           <div class="form-group">
-            <label for="mensaje">Comentario:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="Teléfono">
           </div>
-          <button type="submit" class="btn-enviar">Enviar</button>
+          <div class="form-group">
+            <label for="message">Comentario:</label>
+            <textarea id="message" placeholder="Comentario" rows="4" required></textarea>
+          </div>
+
+          <div id="form-status" class="form-status"></div>
+
+          <button type="submit" class="btn-enviar">
+            <span id="btn-text">Enviar</span>
+            <span id="btn-loader" class="loader" style="display: none;"></span>
+          </button>
         </form>
       </div>
 
@@ -103,39 +118,43 @@
 
       <div class="footer-col empresa">
         <h3>BALAN SERVICES</h3>
-        <p>Soluciones integrales en contabilidad, finanzas y servicios legales. Comprometidos con tu
+        <p data-i18n="footer_company">Soluciones integrales en contabilidad, finanzas y servicios legales.
+          Comprometidos
+          con tu
           crecimiento.</p>
       </div>
 
       <div class="footer-col enlaces">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer_links_title">Navegación</h4>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html" data-i18n="home">Inicio</a></li>
           <li><a href="../balanCounting/balanCounting.html">Balan Services Counting</a></li>
           <li><a href="https://imperconsul.com" target="_blank">Imperconsul</a></li>
           <li><a href="../legalService/legalService.html">Legal Services</a></li>
-          <li><a href="../acerca-de/acerca-de.html">Acerca De Nosotros</a></li>
+          <li><a href="../acerca-de/acerca-de.html" data-i18n="about_us">Acerca De Nosotros</a></li>
         </ul>
       </div>
 
       <div class="footer-col contacto">
-        <h4>Contacto</h4>
+        <h4 data-i18n="contact">Contacto</h4>
         <ul>
           <li>
             <p>Email: asistente-adm@balanservices.com</p>
           </li>
           <li>
-            <p>Teléfono: +593 99 145 6292</p>
+            <p data-i18n="footer_phone_contact">Teléfono: +593 99 145 6292</p>
           </li>
           <li>
-            <p>Dirección: ​Av. ​República del Salvador 354 y Moscú Edif. ​Piazza Toscana​ Piso ​2. Quito,
+            <p data-i18n="footer_location_contact">Dirección: ​Av. ​República del Salvador 354 y Moscú Edif.
+              ​Piazza
+              Toscana​ Piso ​2. Quito,
               Ecuador.</p>
           </li>
         </ul>
       </div>
 
       <div class="footer-col redes">
-        <h4>Síguenos</h4>
+        <h4 data-i18n="footer_follow">Síguenos</h4>
         <div class="iconos-redes">
           <a href="https://www.facebook.com" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/balanservicescounting?igsh=YzNhazk3dHp3cTZz&utm_source=qr" target="_blank"
@@ -152,6 +171,7 @@
     <div class="footer-copy">
       &copy; 2025 BALAN SERVICES & Alexis Pantoja. Todos los derechos reservados.
     </div>
+
   </footer>
 
   <a href="https://wa.me/593990713232?text=%C2%A1Hola%20%F0%9F%91%8B!%20Estoy%20muy%20interesado%20en%20sus%20servicios%20y%20me%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%93%84.%20%C2%BFPodr%C3%ADan%20ayudarme%20por%20favor%20%F0%9F%98%8A"
@@ -159,28 +179,12 @@
     <i class="fas fa-phone"></i>
   </a>
 
-
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-  <script type="text/javascript">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
     (function () {
-      emailjs.init("iqZYrz8MD4jXss5i0"); // Aquí va tu User ID de EmailJS
+      emailjs.init("iqZYrz8MD4jXss5i0");
     })();
   </script>
-
-  <script>
-    function sendEmail(e) {
-      e.preventDefault(); // evita que la página se recargue
-
-      emailjs.sendForm('Gmail', 'template_yrz0j7f', e.target)
-        .then(() => {
-          alert('Mensaje enviado correctamente!');
-          e.target.reset(); // limpia el formulario
-        }, (err) => {
-          alert('Error al enviar el mensaje: ' + JSON.stringify(err));
-        });
-    }
-  </script>
-
 
   <script src="./contact.js"></script>
 
