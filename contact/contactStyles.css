@@ -247,7 +247,7 @@ header.scrolled .hamburger {
 .contacto-items .item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   justify-content: center;
   font-size: 1.1rem;
 }
@@ -255,6 +255,12 @@ header.scrolled .hamburger {
 .contacto-items .item i {
   font-size: 1.8rem;
   color: #00264d;
+}
+
+.contacto-items .item p {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 
 /* Formulario + Mapa */
